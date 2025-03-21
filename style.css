@@ -1,0 +1,69 @@
+/* Full-page background with fixed image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Overlay to improve text readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+/* White content box centered on the page */
+.content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Student cards stacked without scrolling */
+.students {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual student cards */
+.student-card {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+/* Student name title */
+h2 {
+    color: #e35eb7;
+    font-size: 1.1em;
+}
+
+/* Paragraph spacing */
+p {
+    margin: 3px 0;
+    font-size: 0.95em;
+}
